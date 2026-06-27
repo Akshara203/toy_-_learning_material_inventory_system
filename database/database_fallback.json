@@ -1,0 +1,262 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "director",
+      "passwordHash": "$2b$10$nE8VG/93jB.mKQA4pJP7HOk5LxmjCwg3vvhXePk2ey9iYIjQoS/rW",
+      "email": "director@preschool.com",
+      "role": "Admin",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 2,
+      "username": "miss_emily",
+      "passwordHash": "$2b$10$meI2KNfpe0p889QMv1.TEOA1ocEgWbBwdXrP0rQ01KO.ZRY8NIqUO",
+      "email": "emily@preschool.com",
+      "role": "Teacher",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 3,
+      "username": "store_bob",
+      "passwordHash": "$2b$10$gYu/z2YX.duvCPVYgtW6VOPtNKPLXv0RUTUiBlpRw6gbvYsPAzSmS",
+      "email": "bob@preschool.com",
+      "role": "Store Manager",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Toys & Games",
+      "description": "Creative and motor-skill building toys, puzzles, and board games"
+    },
+    {
+      "id": 2,
+      "name": "Books & Media",
+      "description": "Reading books, picture books, and digital educational assets"
+    },
+    {
+      "id": 3,
+      "name": "Worksheets & Printables",
+      "description": "Coloring exercises, alphabet tracing sheets, and printouts"
+    },
+    {
+      "id": 4,
+      "name": "Art & Classroom Materials",
+      "description": "Crayons, child-safe paint, clay, papers, and scissors"
+    },
+    {
+      "id": 5,
+      "name": "Activity & Learning Kits",
+      "description": "Science kits, math counting kits, and tactile puzzle kits"
+    }
+  ],
+  "inventoryItems": [
+    {
+      "id": 1,
+      "name": "Wooden Shape Sorter Block",
+      "categoryId": 1,
+      "sku": "TOY-WD-SORT",
+      "description": "High-quality pine-wood block sorter for spatial awareness.",
+      "quantity": 12,
+      "minRequired": 5,
+      "location": "Shelf A2 - Toys",
+      "supplier": "EarlyYears Supply Co.",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Seuss Cat in the Hat",
+      "categoryId": 2,
+      "sku": "BOK-DS-CATH",
+      "description": "Classic reading book for young readers.",
+      "quantity": 8,
+      "minRequired": 3,
+      "location": "Library Corner - Box 1",
+      "supplier": "KidsBooks Distributor",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 3,
+      "name": "Washable Color Markers (12-Pack)",
+      "categoryId": 4,
+      "sku": "ART-CR-MARK",
+      "description": "Non-toxic, safe washable markers.",
+      "quantity": 25,
+      "minRequired": 10,
+      "location": "Art Cabinet - Shelf B",
+      "supplier": "Crayola Depot",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 4,
+      "name": "Alphabet Animal Coloring Sheets",
+      "categoryId": 3,
+      "sku": "WKS-AL-COLO",
+      "description": "Printable animal character letter coloring exercises.",
+      "quantity": 150,
+      "minRequired": 50,
+      "location": "File Drawer 3",
+      "supplier": "CreativeDay Care Internal",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 5,
+      "name": "Counting Sheep Mathematics Kit",
+      "categoryId": 5,
+      "sku": "KIT-MA-COUN",
+      "description": "A kit containing educational tactile sheep figurines and cards for arithmetic.",
+      "quantity": 2,
+      "minRequired": 4,
+      "location": "Math Lab - Box B",
+      "supplier": "STEM Educators Ltd",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 6,
+      "name": "Child-Safe Plastic Scissors",
+      "categoryId": 4,
+      "sku": "ART-SC-SAFE",
+      "description": "Blunt metal blades encased in colorful child-safe plastic.",
+      "quantity": 4,
+      "minRequired": 8,
+      "location": "Art Cabinet - Drawer A",
+      "supplier": "SchoolMart",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    }
+  ],
+  "stockMovements": [
+    {
+      "id": 1,
+      "itemId": 1,
+      "type": "In",
+      "quantity": 12,
+      "reason": "Initial Procurement Stock",
+      "userId": 3,
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 2,
+      "itemId": 2,
+      "type": "In",
+      "quantity": 10,
+      "reason": "Initial Procurement Stock",
+      "userId": 3,
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 3,
+      "itemId": 2,
+      "type": "Out",
+      "quantity": 2,
+      "reason": "Damaging check out",
+      "userId": 2,
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 4,
+      "itemId": 3,
+      "type": "In",
+      "quantity": 25,
+      "reason": "Initial Store Stocking",
+      "userId": 3,
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 5,
+      "itemId": 4,
+      "type": "In",
+      "quantity": 150,
+      "reason": "Internal duplicating run",
+      "userId": 3,
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 6,
+      "itemId": 5,
+      "type": "In",
+      "quantity": 2,
+      "reason": "Initial Stocking - Low Inventory",
+      "userId": 3,
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 7,
+      "itemId": 6,
+      "type": "In",
+      "quantity": 6,
+      "reason": "Initial Stocking",
+      "userId": 3,
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 8,
+      "itemId": 6,
+      "type": "Out",
+      "quantity": 2,
+      "reason": "Broken scissors discarded",
+      "userId": 3,
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    }
+  ],
+  "damagedItems": [
+    {
+      "id": 1,
+      "itemId": 2,
+      "quantity": 2,
+      "reportedBy": 2,
+      "notes": "Pages torn in the nursery classroom by toddlers.",
+      "status": "Reported",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 2,
+      "itemId": 6,
+      "quantity": 2,
+      "reportedBy": 3,
+      "notes": "Plastic hinges snapped, discarded due to sharp edges.",
+      "status": "Discarded",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    }
+  ],
+  "reorderAlerts": [
+    {
+      "id": 1,
+      "itemId": 5,
+      "status": "Active",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 2,
+      "itemId": 6,
+      "status": "Active",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": 1,
+      "userId": 1,
+      "action": "Database Initialized",
+      "details": "Inventory database automatically seeded with preset materials.",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "action": "Inventory Checked In",
+      "details": "Counting Sheep mathematics kit checked in with current low stock.",
+      "createdAt": "2026-06-15T14:02:36.147Z"
+    }
+  ],
+  "nextIds": {
+    "users": 4,
+    "categories": 6,
+    "inventoryItems": 7,
+    "stockMovements": 9,
+    "damagedItems": 3,
+    "reorderAlerts": 3,
+    "activityLogs": 3
+  }
+}

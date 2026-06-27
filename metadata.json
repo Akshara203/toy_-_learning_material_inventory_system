@@ -1,0 +1,6 @@
+{
+  "name": "Toy & Learning Material Inventory System",
+  "description": "A comprehensive inventory management system for preschools and daycare centers to track toys, books, worksheets, art supplies, and activity kits, monitor damaged items, and manage low-stock and reorder alerts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
